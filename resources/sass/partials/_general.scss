@@ -1,0 +1,28 @@
+// variabili globali reset + proprietà comuni
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 70%;
+    margin: 0px auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

@@ -13,6 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// HOME
 Route::get('/', function () {
-    return view('welcome');
-});
+    $movie_array = config('comics');
+    $data = ['movie_array' => $movie_array];
+    return view('home', $data);
+})->name('home');
+
+// FILM
+Route::get('/movie_details/{id}', function ($id) {
+    $movie_array = config('comics');
+    $movie_to_show = false;
+
+    foreach($movie_array as $movie) {
+        if($movie['id'] == $id) {
+            $movie_to_show = $movie;
+        }
+    }
+    if(!$movie_to_show) {
+        abort('404');
+    }
+
+    $data = [
+        'movie_to_show' => $movie_to_show
+    ];
+
+    return view('movie_details', $data);
+})->name('movie-details');

@@ -11,5 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+ mix.js('resources/js/app.js', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
+    // da aggiungere per visualizzare correttamente images del bg-footer senza errori in npm run watch
+    .options({processCssUrls: false });

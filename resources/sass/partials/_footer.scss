@@ -1,0 +1,56 @@
+// variabili proprietà footer
+footer{
+
+    .footer-top{
+        background-image: url('../images/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .footer-top-content{
+            display: flex;
+            position: relative;
+            overflow: hidden;
+          
+            .footer-links{
+                display: flex;
+                justify-content: space-between;
+                padding: 50px 0;
+                width: 40%;
+           
+                h3{
+                    text-transform: uppercase;
+                    color: white;
+                }
+           
+                a{
+                    font-size: 11px;
+                    line-height: 20px;
+                    color: gray;
+                }
+            }
+
+            .footer-top-img{
+
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: -40%;
+                }
+            }
+        }
+
+    }
+
+
+    .footer-bottom{
+        background-color: $secondary_color;
+        color: white;
+        text-transform: uppercase;
+        padding: 50px 0;
+  
+        .btn-blue{
+            padding: 10px;
+            border: 2px solid $primary_color;
+        }
+    }
+}

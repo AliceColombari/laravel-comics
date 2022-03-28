@@ -1,1 +1,16 @@
 //
+// divido il mio file in più entità e le importo
+
+@import 'partials/_variables';
+
+// import _general.scss
+@import 'partials/_general';
+
+// import _header.scss
+@import 'partials/_header';
+
+// import _main.scss
+@import 'partials/_main';
+
+// import _footer.scss
+@import 'partials/_footer';

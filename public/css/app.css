@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 0px auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+}
+header .header-top {
+  background-color: #0182f9;
+  font-size: 12px;
+}
+header .header-top .header-info {
+  display: flex;
+  justify-content: right;
+  padding: 3px 0;
+}
+header .header-top .header-info-text:first-child {
+  padding-right: 30px;
+}
+header .header-bottom {
+  color: black;
+  font-size: 14px;
+}
+header .header-bottom .header-logo-menu {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+header .header-bottom .header-logo-menu .header-logo {
+  width: 80px;
+  height: auto;
+}
+header .header-bottom .header-logo-menu .header-menu {
+  flex-grow: 1;
+  width: 100%;
+  height: 100px;
+}
+header .header-bottom .header-logo-menu .header-menu .menu {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+header .header-bottom .header-logo-menu .header-menu .menu li {
+  margin: 0 15px;
+  line-height: 100px;
+}
+header .header-bottom .header-logo-menu .header-menu .menu li a {
+  display: inline-block;
+  height: 100px;
+}
+header .header-bottom .header-logo-menu .header-menu .menu li a.current {
+  color: #0182f9;
+  border-bottom: 4px solid #0182f9;
+}
+header .header-bottom .header-jumbotron {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+main .movies {
+  background-color: #303030;
+}
+main .movies .movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0;
+  color: white;
+  text-transform: uppercase;
+}
+main .movies .movies-list .movie {
+  padding: 20px 5px;
+  width: calc(16.6666666667% - 10px);
+}
+main .movies .movies-list .movie img {
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  padding-bottom: 10px;
+}
+main .pre-footer {
+  background-color: #0182f9;
+}
+main .pre-footer .nav-icon {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+main .pre-footer .nav-icon img {
+  width: 40px;
+  vertical-align: middle;
+}
+
+footer .footer-top {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .footer-top .footer-top-content {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+footer .footer-top .footer-top-content .footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  width: 40%;
+}
+footer .footer-top .footer-top-content .footer-links h3 {
+  text-transform: uppercase;
+  color: white;
+}
+footer .footer-top .footer-top-content .footer-links a {
+  font-size: 11px;
+  line-height: 20px;
+  color: gray;
+}
+footer .footer-top .footer-top-content .footer-top-img img {
+  position: absolute;
+  right: 0;
+  top: -40%;
+}
+footer .footer-bottom {
+  background-color: #303030;
+  color: white;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+footer .footer-bottom .btn-blue {
+  padding: 10px;
+  border: 2px solid #0182f9;
+}
