@@ -20,13 +20,23 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
+
+Route::get('/comics', function () {
+    $movie_array = config('comics');
+    $data = ['movie_array' => $movie_array];
+    return view('components.movies_list', $data);
+})->name('comics');
+
+
 // FILM
-Route::get('/movie_details/{id}', function ($id) {
+Route::get('/movie_details/{title}', function ($title) {
     $movie_array = config('comics');
     $movie_to_show = false;
 
     foreach($movie_array as $movie) {
-        if($movie['id'] == $id) {
+        dd($movie_to_show);
+        
+        if($movie['title'] == $title) {
             $movie_to_show = $movie;
         }
     }

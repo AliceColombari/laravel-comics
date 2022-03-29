@@ -1,5 +1,5 @@
 {{-- Extend app.blade.php --}}
-@extends('layouts.app')
+@extends('layouts.base')
 
 {{-- Page Title --}}
 @section('page_title')

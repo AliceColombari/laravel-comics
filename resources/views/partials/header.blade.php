@@ -36,7 +36,7 @@
                             </li>
 
                             <li class="{{Request::route()->getName() === 'movie-details' ? 'current' : '' }}" >
-                                <a href="#">comics</a>
+                                <a href="{{route('comics')}}">comics</a>
                             </li> 
 
                            
