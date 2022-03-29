@@ -6,7 +6,7 @@
     Movie Details
 @endsection
 
-{{-- Main --}}
+{{-- Main comics click details --}}
 @section('main_content')
     
     <section class="movie-details">
