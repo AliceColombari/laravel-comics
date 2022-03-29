@@ -47,10 +47,31 @@ footer{
         color: white;
         text-transform: uppercase;
         padding: 50px 0;
+
+        &-content{
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
   
         .btn-blue{
             padding: 10px;
             border: 2px solid $primary_color;
+        }
+
+        .footer-follow-us{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+            .social-links{
+                display: flex;
+
+                li{
+                    padding: 5px;
+                }
+            }
+        }
         }
     }
 }

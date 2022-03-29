@@ -31,13 +31,15 @@
                 <div class="header-menu">
                     <nav>
                         <ul class="menu">
-                            <li>
-                                <a href="#">caracters</a>
+                            <li class="{{ Request::route()->getName() === 'home' ? 'current' : '' }}">
+                                <a href="{{route('home')}}">caracters</a>
                             </li>
 
-                            <li>
-                                <a class="current" href="#">comics</a>
-                            </li>
+                            <li class="{{Request::route()->getName() === 'movie-details' ? 'current' : '' }}" >
+                                <a href="#">comics</a>
+                            </li> 
+
+                           
 
                             <li>
                                 <a href="#">movies</a>

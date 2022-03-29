@@ -13,6 +13,11 @@ body {
   margin: 0px auto;
 }
 
+.container-details {
+  width: 55%;
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
 }
@@ -72,29 +77,44 @@ header .header-bottom .header-logo-menu .header-menu .menu li {
   margin: 0 15px;
   line-height: 100px;
 }
+header .header-bottom .header-logo-menu .header-menu .menu li.current {
+  color: #0182f9;
+  border-bottom: 4px solid #0182f9;
+}
 header .header-bottom .header-logo-menu .header-menu .menu li a {
   display: inline-block;
   height: 100px;
-}
-header .header-bottom .header-logo-menu .header-menu .menu li a.current {
-  color: #0182f9;
-  border-bottom: 4px solid #0182f9;
 }
 header .header-bottom .header-jumbotron {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
+header .header-bottom .header-jumbotron img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
+main.secondary-color-background {
+  background-color: #0182f9;
+}
 main .movies {
   background-color: #303030;
+  color: white;
+}
+main .movies .current-series h3 {
+  background-color: #0182f9;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  bottom: 20px;
 }
 main .movies .movies-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px 0;
-  color: white;
   text-transform: uppercase;
 }
 main .movies .movies-list .movie {
@@ -109,6 +129,14 @@ main .movies .movies-list .movie img {
   -o-object-position: top;
      object-position: top;
   padding-bottom: 10px;
+}
+main .movies .load-more {
+  text-align: center;
+  padding-bottom: 30px;
+}
+main .movies .load-more a {
+  background-color: #0182f9;
+  padding: 10px 40px;
 }
 main .pre-footer {
   background-color: #0182f9;
@@ -125,6 +153,130 @@ main .pre-footer .nav-icon {
 main .pre-footer .nav-icon img {
   width: 40px;
   vertical-align: middle;
+}
+main .movie-details {
+  width: 100%;
+  background: linear-gradient(to bottom, #0182f9 0px, #0182f9 10vh, white 10vh, white 100%);
+  position: relative;
+}
+main .movie-details .movie-view-gallery {
+  position: absolute;
+  top: -170px;
+  left: 350px;
+}
+main .movie-details .movie-view-gallery img {
+  width: 150px;
+  border: 1px solid white;
+}
+main .movie-details-content {
+  display: flex;
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+main .movie-details-content .movie-main-info {
+  width: 80%;
+  padding-right: 30px;
+}
+main .movie-details-content .movie-main-info .movie-title {
+  padding-top: 15px;
+}
+main .movie-details-content .movie-main-info .movie-price {
+  background-color: #55ba59;
+  border-bottom: 1px solid black;
+  margin: 15px 0;
+}
+main .movie-details-content .movie-main-info .movie-price-available {
+  display: flex;
+  font-size: 12px;
+  color: white;
+}
+main .movie-details-content .movie-main-info .movie-price-available .lightgreen {
+  color: lightgreen;
+}
+main .movie-details-content .movie-main-info .movie-price-available .price,
+main .movie-details-content .movie-main-info .movie-price-available .available {
+  width: 35%;
+  height: 100%;
+  padding: 15px 20px;
+}
+main .movie-details-content .movie-main-info .movie-price-available .available {
+  padding-right: 20px;
+  text-align: right;
+  border-right: 1px solid black;
+  text-transform: uppercase;
+}
+main .movie-details-content .movie-main-info .movie-price-available .check-availablility {
+  width: 30%;
+  text-align: center;
+  padding: 15px 20px;
+}
+main .movie-details-content .movie-advertisement {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: right;
+}
+main .movie-details-content .movie-advertisement img {
+  margin-top: 10px;
+}
+main .movie-detailed-information {
+  background-color: #f6f6f6;
+  border-top: 1px solid lightgray;
+  padding: 40px 0;
+}
+main .movie-detailed-information .movie-information-content {
+  display: flex;
+}
+main .movie-detailed-information .movie-information-content .movie-talent,
+main .movie-detailed-information .movie-information-content .movie-specs {
+  width: 50%;
+  padding-right: 30px;
+}
+main .movie-detailed-information .movie-information-content .movie-talent h3,
+main .movie-detailed-information .movie-information-content .movie-specs h3 {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+}
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info {
+  font-size: 11px;
+}
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info .art-by,
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info .written-by {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  padding: 5px 0;
+}
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info .art-by div,
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info .written-by div {
+  width: 40%;
+}
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info .art-by span,
+main .movie-detailed-information .movie-information-content .movie-talent .talent-info .written-by span {
+  color: #0182f9;
+  width: 60%;
+}
+main .movie-detailed-information .movie-information-content .movie-specs .specs-info {
+  font-size: 11px;
+}
+main .movie-detailed-information .movie-information-content .movie-specs .specs-series,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-price,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-sale-date {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  padding: 5px 0;
+}
+main .movie-detailed-information .movie-information-content .movie-specs .specs-series div,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-price div,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-sale-date div {
+  width: 40%;
+}
+main .movie-detailed-information .movie-information-content .movie-specs .specs-series span,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-price span,
+main .movie-detailed-information .movie-information-content .movie-specs .specs-sale-date span {
+  width: 60%;
+}
+main .movie-detailed-information .movie-information-content .movie-specs .specs-series span {
+  color: #0182f9;
+  text-transform: uppercase;
 }
 
 footer .footer-top {
@@ -163,7 +315,24 @@ footer .footer-bottom {
   text-transform: uppercase;
   padding: 50px 0;
 }
-footer .footer-bottom .btn-blue {
+footer .footer-bottom-content {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-bottom-content .btn-blue {
   padding: 10px;
   border: 2px solid #0182f9;
+}
+footer .footer-bottom-content .footer-follow-us {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+footer .footer-bottom-content .footer-follow-us .social-links {
+  display: flex;
+}
+footer .footer-bottom-content .footer-follow-us .social-links li {
+  padding: 5px;
 }

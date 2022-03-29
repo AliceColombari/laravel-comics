@@ -1,17 +1,32 @@
 // variabili proprietà main 
 main{
 
+    &.secondary-color-background {
+        background-color: $primary_color;
+    }
+   
     .movies{
         background-color: $secondary_color;
+        color: white;
        
+        .current-series{
+            h3{
+                background-color: $primary_color;
+                display: inline-block;
+                padding: 10px;
+                position: relative;
+                bottom: 20px;
+            }
+            
+        }
+
         .movies-list{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 50px 0;
-            color: white;
             text-transform: uppercase;
-
+            
             .movie{
                 padding: 20px 5px;
                 width: calc((100% / 6) - 10px);
@@ -25,7 +40,19 @@ main{
                 }
             }
         }
+
+        .load-more{
+            text-align: center;
+            padding-bottom: 30px;
+            a{
+                background-color: $primary_color;
+                padding: 10px 40px;
+                
+            }
+            
+        }
     }
+
 
     .pre-footer{
         background-color: $primary_color;
@@ -38,10 +65,166 @@ main{
             color: white;
             text-transform: uppercase;
             font-size: 14px;
-            
+       
             img{
                 width: 40px;
                 vertical-align: middle;
+            }
+        }
+    }
+
+
+    .movie-details{
+        width: 100%;
+        background: linear-gradient(to bottom, $primary_color 0px, $primary_color 10vh, white 10vh, white 100%);
+        position: relative;
+     
+        .movie-view-gallery{
+            position: absolute;
+            top: -170px;
+            left: 350px;
+            
+            img{
+                width: 150px;
+                border: 1px solid white;
+            }
+        }
+
+        &-content{
+            display: flex;
+            padding-top: 130px;
+            padding-bottom: 50px;
+
+            .movie-main-info{
+                width: 80%;
+                padding-right: 30px;
+
+                .movie-title{
+                    padding-top: 15px;
+                }
+
+                .movie-price{
+                    background-color: #55ba59;
+                    border-bottom: 1px solid black;
+                    margin: 15px 0;
+
+                    &-available{
+                        display: flex;                        
+                        font-size: 12px;
+                        color: white;
+
+                        .lightgreen{
+                            color: lightgreen;
+                        }
+
+                        .price,
+                        .available{
+                            width: 35%;
+                            height: 100%;
+                            padding: 15px 20px;
+                        }
+
+                        .available{
+                            padding-right: 20px;
+                            text-align: right;
+                            border-right: 1px solid black;
+                            text-transform: uppercase;
+                        }
+                        
+                        .check-availablility{
+                            width: 30%;
+                            text-align: center;
+                            padding: 15px 20px;
+                        }
+                    }
+                }
+            }
+
+
+            .movie-advertisement{
+                text-transform: uppercase;
+                font-size: 12px;
+                text-align: right;
+                
+                img{
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+
+    .movie-detailed-information{
+        background-color: #f6f6f6;
+        border-top: 1px solid lightgray;
+        padding: 40px 0;
+
+        .movie-information-content{
+            display: flex;
+
+            .movie-talent,
+            .movie-specs{
+                width: 50%;
+                padding-right: 30px;
+
+                h3{
+                    border-bottom: 1px solid lightgray;
+                    padding-bottom: 15px;
+                }
+            }
+
+            .movie-talent{
+
+                .talent-info{
+                    font-size: 11px;
+                    
+                    .art-by,
+                    .written-by{
+                        border-bottom: 1px solid lightgray;
+                        display: flex;
+                        padding: 5px 0;
+
+                        div{
+                            width: 40%;
+                        }
+
+                        span{
+                            color: $primary_color;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+
+            .movie-specs{
+
+                .specs-info{
+                    font-size: 11px;
+                }
+
+                .specs-series,
+                .specs-price,
+                .specs-sale-date{
+                    display: flex;
+                    border-bottom: 1px solid lightgray;
+                    padding: 5px 0;
+
+                    div{
+                        width: 40%;
+                    }
+
+                    span{
+                        width: 60%;
+                    }
+                }
+
+                .specs-series{
+
+                    span{
+                        color: $primary_color;
+                        text-transform: uppercase;
+                    }
+                }
             }
         }
     }
