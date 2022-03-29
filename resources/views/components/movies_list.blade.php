@@ -4,12 +4,12 @@
     @foreach ($movie_array as $movie)
             <div class="movie">
 
-                <a href="{{ route('movie-details', ['id' => $movie['id']]) }}">
+                {{-- <a href="{{ route('movie-details', ['id' => $movie['id']]) }}"> --}}
                     <div>
                         <img src="{{ $movie['thumb'] }}" alt="{{$movie['title']}}">
                         <h5>{{ $movie['series'] }}</h5>
                     </div>
-                </a>
+                {{-- </a> --}}
                 
             </div>
         @endforeach
