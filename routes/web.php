@@ -34,7 +34,7 @@ Route::get('/movie_details/{title}', function ($title) {
     $movie_to_show = false;
 
     foreach($movie_array as $movie) {
-        dd($movie_to_show);
+        //dd($movie_to_show);
         
         if($movie['title'] == $title) {
             $movie_to_show = $movie;
